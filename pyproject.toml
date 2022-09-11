@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "python-fast-api"
+version = "0.1.0"
+description = ""
+authors = ["fxricky <fanxuricky@gmail.com>"]
+readme = "README.md"
+packages = [{include = "python_fast_api"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = {extras = ["all"], version = "^0.82.0"}
+tortoise-orm = {extras = ["asyncpg"], version = "^0.19.2"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
